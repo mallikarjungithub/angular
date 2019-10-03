@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <div class="container" ng-controller="firstCtrl">
+        {{name}}
+    </div>
+    {{fullName}} -->
+    <div class="container">
+        <!-- <div ng-controller="firstCtrl">
+            my name is {{name}}my age is{{age}my place is{{place}}
+        </div> -->
+        <!-- <div ng-controller="secondCtrl">
+            father name is {{father}},mother name is{{mother}}
+        </div> -->
+        <div ng-controller="firstCtrl">
+            <h1>
+                Name is {{fullName}} and age {{age}} place {{place}}
+            </h1>
+            <h1>
+                {{data[0].name}}
+            </h1>
+        </div>
+        <div ng-controller="secondCtrl">
+            {{fullName}}
+            {{mother}}
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
